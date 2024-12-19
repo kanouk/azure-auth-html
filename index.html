@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Outlookカレンダー招集</title>
+  <title>Outlook連携テスト</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -84,8 +84,8 @@
 
     <!-- カレンダー招集フォーム -->
     <form id="invite-form">
-      <label for="subject">会議名:</label>
-      <input type="text" id="subject" name="subject" placeholder="例: プロジェクト会議" required>
+      <label for="subject">研修名:</label>
+      <input type="text" id="subject" name="subject" placeholder="例: M-BT" required>
 
       <label for="start">開始日時:</label>
       <input type="datetime-local" id="start" name="start" required>
@@ -93,11 +93,11 @@
       <label for="end">終了日時:</label>
       <input type="datetime-local" id="end" name="end" required>
 
-      <label for="attendee">参加者メールアドレス:</label>
+      <label for="attendee">受講者メールアドレス:</label>
       <input type="email" id="attendee" name="attendee" placeholder="例: user@example.com" required>
 
       <label for="description">説明:</label>
-      <textarea id="description" name="description" rows="5" placeholder="会議の目的や議題を入力してください" required></textarea>
+      <textarea id="description" name="description" rows="5" placeholder="受講者への案内文を入力してください" required></textarea>
 
       <button type="submit">招集する</button>
     </form>
